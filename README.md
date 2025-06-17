@@ -1,22 +1,53 @@
----
+## 🤖 OpenManipulator-X — Démo de Prise d’Objet (`take_ball`) dans Docker
 
-## 🤖 OpenManipulator-X — Démo de Prise avec `take_ball` (Docker)
-
-Ce projet lance une simulation Gazebo + MoveIt dans un conteneur Docker, permettant de planifier et exécuter un mouvement de type "prise d’objet" avec l’OpenManipulator-X.
+Ce projet permet de simuler et piloter l’OpenManipulator-X dans un environnement Docker ROS 2 Jazzy + MoveIt + Gazebo, avec une démo automatisée de type "pick and place".
 
 ---
 
-### 🐳 Pré-requis
+### 🐳 1. Construire l'image Docker
 
-* Docker avec `ros2-jazzy` + Gazebo + MoveIt configurés
-* Le workspace `ros_workshop_ws` compilé dans Docker (`colcon build`)
-* X11 forwarding ou Wayland configuré si RViz ou Gazebo est utilisé
+Dans le dossier contenant le `Dockerfile` :
+
+```bash
+docker build -t ros2-jazzy-noble .
+```
 
 ---
 
-### 🧭 Étapes de lancement (dans 3 terminaux Docker)
+### 🧱 2. Lancer le conteneur avec `docker-compose`
 
-#### 🛠 1. **Dans les 3 terminaux :** source de l’environnement
+Dans le même dossier que `docker-compose.yml` :
+
+```bash
+docker-compose up -d
+```
+
+> Cela lance un conteneur nommé `ros2_jazzy_gui`.
+
+---
+
+### 🖥️ 3. Se connecter au terminal Docker
+
+```bash
+docker exec -it ros2_jazzy_gui bash
+```
+
+---
+
+### 📦 4. Compiler le workspace (si pas déjà fait)
+
+Dans le conteneur Docker :
+
+```bash
+cd /ros2_ws/ros_workshop_ws
+colcon build
+```
+
+---
+
+### 🧭 5. Lancer la démo `take_ball` (3 terminaux requis)
+
+#### Dans **les 3 terminaux**, exécute d’abord :
 
 ```bash
 source ros_workshop_ws/install/setup.sh
@@ -24,9 +55,7 @@ source ros_workshop_ws/install/setup.sh
 
 ---
 
-#### 🧱 2. **Terminal 1** – Simulation Gazebo
-
-Lance le monde avec le robot simulé :
+#### 🧱 Terminal 1 : Lancer Gazebo
 
 ```bash
 ros2 launch open_manipulator_bringup gazebo.launch.py
@@ -34,9 +63,7 @@ ros2 launch open_manipulator_bringup gazebo.launch.py
 
 ---
 
-#### 🎮 3. **Terminal 2** – MoveIt + RViz
-
-⚠️ Fixe la locale pour éviter les erreurs de parsing de floats :
+#### 🧠 Terminal 2 : Lancer MoveIt + RViz (avec locale fixée)
 
 ```bash
 LC_NUMERIC=en_US.UTF-8 ros2 launch open_manipulator_moveit_config moveit_core.launch.py
@@ -44,7 +71,7 @@ LC_NUMERIC=en_US.UTF-8 ros2 launch open_manipulator_moveit_config moveit_core.la
 
 ---
 
-#### 🧠 4. **Terminal 3** – Exécution automatique de la prise
+#### 🤖 Terminal 3 : Lancer le script de prise
 
 ```bash
 ros2 run open_manipulator_playground take_ball
@@ -52,20 +79,21 @@ ros2 run open_manipulator_playground take_ball
 
 ---
 
-### 📈 Résultat attendu
+### ✅ Comportement attendu
 
-* Le bras se déplace vers une position cartésienne prédéfinie (au-dessus de l’objet)
-* Descente vers l’objet
-* Fermeture de la pince
-* Remontée
-* Retour à une position de départ
-* Ouverture du gripper
+* Le bras se déplace au-dessus de l’objet
+* Il descend, ferme la pince
+* Remonte avec l’objet
+* Revient à une position initiale
+* Ouvre la pince pour relâcher
 
 ---
 
-### 🧩 Remarques
+### 📝 Notes
 
-* Vérifie que les `controllers` sont actifs dans Gazebo (`ros2 control list_controllers`)
-* Le fichier `take_ball.cpp` peut être ajusté pour tester d’autres poses ou séquences
-* Fonctionne avec ou sans exécution réelle (fake ou Gazebo)
+* Fonctionne en simulation dans Gazebo avec contrôleurs ROS 2
+* Compatible avec l’exécution factice (`use_fake_hardware:=true` si besoin)
+* RViz permet d’observer et ajuster le plan
+
+---
 

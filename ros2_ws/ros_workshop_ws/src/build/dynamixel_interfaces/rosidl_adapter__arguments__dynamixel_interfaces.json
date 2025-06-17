@@ -1,0 +1,9 @@
+{
+  "package_name": "dynamixel_interfaces",
+  "non_idl_tuples": [
+    "/ros2_ws/ros_workshop_ws/src/dynamixel_interfaces:msg/DynamixelState.msg",
+    "/ros2_ws/ros_workshop_ws/src/dynamixel_interfaces:srv/GetDataFromDxl.srv",
+    "/ros2_ws/ros_workshop_ws/src/dynamixel_interfaces:srv/SetDataToDxl.srv",
+    "/ros2_ws/ros_workshop_ws/src/dynamixel_interfaces:srv/RebootDxl.srv"
+  ]
+}

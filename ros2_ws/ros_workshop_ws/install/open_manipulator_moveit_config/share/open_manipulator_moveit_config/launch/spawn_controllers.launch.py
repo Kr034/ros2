@@ -1,0 +1,1 @@
+/ros2_ws/ros_workshop_ws/src/open_manipulator/open_manipulator_moveit_config/launch/spawn_controllers.launch.py

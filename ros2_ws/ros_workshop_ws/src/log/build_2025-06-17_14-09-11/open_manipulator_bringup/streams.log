@@ -1,0 +1,72 @@
+[1.084s] Invoking command in '/ros2_ws/ros_workshop_ws/src/open_manipulator/open_manipulator_bringup': AMENT_PREFIX_PATH=/ros2_ws/ros_workshop_ws/src/install/dynamixel_hardware_interface:/ros2_ws/ros_workshop_ws/src/install/open_manipulator_description:/ros2_ws/ros_workshop_ws/src/install/dynamixel_sdk:/ros2_ws/ros_workshop_ws/src/install/dynamixel_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ros2_ws/ros_workshop_ws/src/install/dynamixel_hardware_interface:/ros2_ws/ros_workshop_ws/src/install/open_manipulator_description:/ros2_ws/ros_workshop_ws/src/install/dynamixel_sdk:/ros2_ws/ros_workshop_ws/src/install/dynamixel_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/ros2_ws/ros_workshop_ws/src/install/dynamixel_hardware_interface/lib:/ros2_ws/ros_workshop_ws/src/install/dynamixel_sdk/lib:/ros2_ws/ros_workshop_ws/src/install/dynamixel_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/ros2_ws/ros_workshop_ws/src/build/open_manipulator_bringup/prefix_override:/usr/local/lib/python3.12/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/lib/python3.12/site-packages:/ros2_ws/ros_workshop_ws/src/install/dynamixel_sdk/lib/python3.12/site-packages:/ros2_ws/ros_workshop_ws/src/install/dynamixel_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/open_manipulator_bringup build --build-base /ros2_ws/ros_workshop_ws/src/build/open_manipulator_bringup/build install --record /ros2_ws/ros_workshop_ws/src/build/open_manipulator_bringup/install.log --single-version-externally-managed install_data
+[1.424s] running egg_info
+[1.424s] creating ../../build/open_manipulator_bringup/open_manipulator_bringup.egg-info
+[1.447s] writing ../../build/open_manipulator_bringup/open_manipulator_bringup.egg-info/PKG-INFO
+[1.448s] writing dependency_links to ../../build/open_manipulator_bringup/open_manipulator_bringup.egg-info/dependency_links.txt
+[1.448s] writing entry points to ../../build/open_manipulator_bringup/open_manipulator_bringup.egg-info/entry_points.txt
+[1.448s] writing requirements to ../../build/open_manipulator_bringup/open_manipulator_bringup.egg-info/requires.txt
+[1.448s] writing top-level names to ../../build/open_manipulator_bringup/open_manipulator_bringup.egg-info/top_level.txt
+[1.449s] writing manifest file '../../build/open_manipulator_bringup/open_manipulator_bringup.egg-info/SOURCES.txt'
+[1.498s] reading manifest file '../../build/open_manipulator_bringup/open_manipulator_bringup.egg-info/SOURCES.txt'
+[1.499s] writing manifest file '../../build/open_manipulator_bringup/open_manipulator_bringup.egg-info/SOURCES.txt'
+[1.499s] running build
+[1.499s] running build_py
+[1.499s] creating /ros2_ws/ros_workshop_ws/src/build/open_manipulator_bringup/build
+[1.500s] creating /ros2_ws/ros_workshop_ws/src/build/open_manipulator_bringup/build/lib
+[1.500s] creating /ros2_ws/ros_workshop_ws/src/build/open_manipulator_bringup/build/lib/open_manipulator_bringup
+[1.500s] copying open_manipulator_bringup/__init__.py -> /ros2_ws/ros_workshop_ws/src/build/open_manipulator_bringup/build/lib/open_manipulator_bringup
+[1.500s] copying open_manipulator_bringup/joint_trajectory_executor.py -> /ros2_ws/ros_workshop_ws/src/build/open_manipulator_bringup/build/lib/open_manipulator_bringup
+[1.500s] copying open_manipulator_bringup/pack_unpack_y.py -> /ros2_ws/ros_workshop_ws/src/build/open_manipulator_bringup/build/lib/open_manipulator_bringup
+[1.503s] copying open_manipulator_bringup/om_create_udev_rules.py -> /ros2_ws/ros_workshop_ws/src/build/open_manipulator_bringup/build/lib/open_manipulator_bringup
+[1.503s] running install
+[1.509s] running install_lib
+[1.535s] creating /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/lib/python3.12/site-packages/open_manipulator_bringup
+[1.535s] copying /ros2_ws/ros_workshop_ws/src/build/open_manipulator_bringup/build/lib/open_manipulator_bringup/__init__.py -> /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/lib/python3.12/site-packages/open_manipulator_bringup
+[1.535s] copying /ros2_ws/ros_workshop_ws/src/build/open_manipulator_bringup/build/lib/open_manipulator_bringup/joint_trajectory_executor.py -> /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/lib/python3.12/site-packages/open_manipulator_bringup
+[1.535s] copying /ros2_ws/ros_workshop_ws/src/build/open_manipulator_bringup/build/lib/open_manipulator_bringup/pack_unpack_y.py -> /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/lib/python3.12/site-packages/open_manipulator_bringup
+[1.535s] copying /ros2_ws/ros_workshop_ws/src/build/open_manipulator_bringup/build/lib/open_manipulator_bringup/om_create_udev_rules.py -> /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/lib/python3.12/site-packages/open_manipulator_bringup
+[1.535s] byte-compiling /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/lib/python3.12/site-packages/open_manipulator_bringup/__init__.py to __init__.cpython-312.pyc
+[1.536s] byte-compiling /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/lib/python3.12/site-packages/open_manipulator_bringup/joint_trajectory_executor.py to joint_trajectory_executor.cpython-312.pyc
+[1.538s] byte-compiling /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/lib/python3.12/site-packages/open_manipulator_bringup/pack_unpack_y.py to pack_unpack_y.cpython-312.pyc
+[1.539s] byte-compiling /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/lib/python3.12/site-packages/open_manipulator_bringup/om_create_udev_rules.py to om_create_udev_rules.cpython-312.pyc
+[1.539s] running install_data
+[1.539s] creating /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/share/ament_index
+[1.539s] creating /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/share/ament_index/resource_index
+[1.540s] creating /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/share/ament_index/resource_index/packages
+[1.540s] copying resource/open_manipulator_bringup -> /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/share/ament_index/resource_index/packages
+[1.540s] copying package.xml -> /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/share/open_manipulator_bringup
+[1.540s] creating /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/share/open_manipulator_bringup/launch
+[1.540s] copying launch/gazebo.launch.py -> /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/share/open_manipulator_bringup/launch
+[1.540s] copying launch/hardware_y.launch.py -> /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/share/open_manipulator_bringup/launch
+[1.540s] copying launch/unpack_y.launch.py -> /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/share/open_manipulator_bringup/launch
+[1.540s] copying launch/hardware_x.launch.py -> /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/share/open_manipulator_bringup/launch
+[1.540s] copying launch/ai_teleoperation.launch.py -> /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/share/open_manipulator_bringup/launch
+[1.540s] copying launch/pack_y.launch.py -> /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/share/open_manipulator_bringup/launch
+[1.540s] copying launch/hardware_y_leader.launch.py -> /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/share/open_manipulator_bringup/launch
+[1.541s] copying launch/hardware_y_follower.launch.py -> /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/share/open_manipulator_bringup/launch
+[1.541s] creating /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/share/open_manipulator_bringup/config
+[1.541s] creating /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/share/open_manipulator_bringup/config/om_x
+[1.541s] copying config/om_x/gazebo_controller_manager.yaml -> /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/share/open_manipulator_bringup/config/om_x
+[1.541s] copying config/om_x/hardware_controller_manager.yaml -> /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/share/open_manipulator_bringup/config/om_x
+[1.541s] copying config/om_x/initial_positions.yaml -> /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/share/open_manipulator_bringup/config/om_x
+[1.541s] creating /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/share/open_manipulator_bringup/config/om_y
+[1.541s] copying config/om_y/gazebo_controller_manager.yaml -> /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/share/open_manipulator_bringup/config/om_y
+[1.545s] copying config/om_y/hardware_controller_manager.yaml -> /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/share/open_manipulator_bringup/config/om_y
+[1.545s] copying config/om_y/initial_positions.yaml -> /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/share/open_manipulator_bringup/config/om_y
+[1.545s] creating /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/share/open_manipulator_bringup/config/om_y_follower
+[1.545s] copying config/om_y_follower/gazebo_controller_manager.yaml -> /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/share/open_manipulator_bringup/config/om_y_follower
+[1.545s] copying config/om_y_follower/hardware_controller_manager.yaml -> /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/share/open_manipulator_bringup/config/om_y_follower
+[1.545s] copying config/om_y_follower/initial_positions.yaml -> /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/share/open_manipulator_bringup/config/om_y_follower
+[1.545s] creating /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/share/open_manipulator_bringup/config/om_y_leader
+[1.545s] copying config/om_y_leader/hardware_controller_manager.yaml -> /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/share/open_manipulator_bringup/config/om_y_leader
+[1.545s] creating /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/share/open_manipulator_bringup/worlds
+[1.545s] copying worlds/empty_world.sdf -> /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/share/open_manipulator_bringup/worlds
+[1.545s] copying open-manipulator-cdc.rules -> /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/share/open_manipulator_bringup
+[1.545s] running install_egg_info
+[1.572s] Copying ../../build/open_manipulator_bringup/open_manipulator_bringup.egg-info to /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/lib/python3.12/site-packages/open_manipulator_bringup-3.3.0-py3.12.egg-info
+[1.572s] running install_scripts
+[1.744s] Installing joint_trajectory_executor script to /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/lib/open_manipulator_bringup
+[1.744s] Installing om_create_udev_rules script to /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/lib/open_manipulator_bringup
+[1.745s] Installing pack_unpack_y script to /ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/lib/open_manipulator_bringup
+[1.745s] writing list of installed files to '/ros2_ws/ros_workshop_ws/src/build/open_manipulator_bringup/install.log'
+[1.798s] Invoked command in '/ros2_ws/ros_workshop_ws/src/open_manipulator/open_manipulator_bringup' returned '0': AMENT_PREFIX_PATH=/ros2_ws/ros_workshop_ws/src/install/dynamixel_hardware_interface:/ros2_ws/ros_workshop_ws/src/install/open_manipulator_description:/ros2_ws/ros_workshop_ws/src/install/dynamixel_sdk:/ros2_ws/ros_workshop_ws/src/install/dynamixel_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/ros2_ws/ros_workshop_ws/src/install/dynamixel_hardware_interface:/ros2_ws/ros_workshop_ws/src/install/open_manipulator_description:/ros2_ws/ros_workshop_ws/src/install/dynamixel_sdk:/ros2_ws/ros_workshop_ws/src/install/dynamixel_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/ros2_ws/ros_workshop_ws/src/install/dynamixel_hardware_interface/lib:/ros2_ws/ros_workshop_ws/src/install/dynamixel_sdk/lib:/ros2_ws/ros_workshop_ws/src/install/dynamixel_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/ros2_ws/ros_workshop_ws/src/build/open_manipulator_bringup/prefix_override:/usr/local/lib/python3.12/dist-packages/colcon_core/task/python/colcon_distutils_commands:/ros2_ws/ros_workshop_ws/src/install/open_manipulator_bringup/lib/python3.12/site-packages:/ros2_ws/ros_workshop_ws/src/install/dynamixel_sdk/lib/python3.12/site-packages:/ros2_ws/ros_workshop_ws/src/install/dynamixel_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/open_manipulator_bringup build --build-base /ros2_ws/ros_workshop_ws/src/build/open_manipulator_bringup/build install --record /ros2_ws/ros_workshop_ws/src/build/open_manipulator_bringup/install.log --single-version-externally-managed install_data

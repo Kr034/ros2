@@ -1,0 +1,111 @@
+[0.078s] Invoking command in '/ros2_ws/ros_workshop_ws/src/build/open_manipulator_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros2_ws/ros_workshop_ws/install/open_manipulator_teleop:/ros2_ws/ros_workshop_ws/install/open_manipulator_bringup:/opt/ros/jazzy /usr/bin/cmake /ros2_ws/ros_workshop_ws/src/open_manipulator/open_manipulator_description -DCMAKE_INSTALL_PREFIX=/ros2_ws/ros_workshop_ws/src/install/open_manipulator_description
+[0.163s] -- The C compiler identification is GNU 13.3.0
+[0.264s] -- The CXX compiler identification is GNU 13.3.0
+[0.290s] -- Detecting C compiler ABI info
+[0.469s] -- Detecting C compiler ABI info - done
+[0.482s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.482s] -- Detecting C compile features
+[0.484s] -- Detecting C compile features - done
+[0.498s] -- Detecting CXX compiler ABI info
+[0.677s] -- Detecting CXX compiler ABI info - done
+[0.693s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.693s] -- Detecting CXX compile features
+[0.698s] -- Detecting CXX compile features - done
+[0.710s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.003s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.488s] -- Configuring done (1.4s)
+[1.491s] -- Generating done (0.0s)
+[1.493s] -- Build files have been written to: /ros2_ws/ros_workshop_ws/src/build/open_manipulator_description
+[1.501s] Invoked command in '/ros2_ws/ros_workshop_ws/src/build/open_manipulator_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros2_ws/ros_workshop_ws/install/open_manipulator_teleop:/ros2_ws/ros_workshop_ws/install/open_manipulator_bringup:/opt/ros/jazzy /usr/bin/cmake /ros2_ws/ros_workshop_ws/src/open_manipulator/open_manipulator_description -DCMAKE_INSTALL_PREFIX=/ros2_ws/ros_workshop_ws/src/install/open_manipulator_description
+[1.505s] Invoking command in '/ros2_ws/ros_workshop_ws/src/build/open_manipulator_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros2_ws/ros_workshop_ws/install/open_manipulator_teleop:/ros2_ws/ros_workshop_ws/install/open_manipulator_bringup:/opt/ros/jazzy /usr/bin/cmake --build /ros2_ws/ros_workshop_ws/src/build/open_manipulator_description -- -j16 -l16
+[1.660s] Invoked command in '/ros2_ws/ros_workshop_ws/src/build/open_manipulator_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros2_ws/ros_workshop_ws/install/open_manipulator_teleop:/ros2_ws/ros_workshop_ws/install/open_manipulator_bringup:/opt/ros/jazzy /usr/bin/cmake --build /ros2_ws/ros_workshop_ws/src/build/open_manipulator_description -- -j16 -l16
+[1.677s] Invoking command in '/ros2_ws/ros_workshop_ws/src/build/open_manipulator_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros2_ws/ros_workshop_ws/install/open_manipulator_teleop:/ros2_ws/ros_workshop_ws/install/open_manipulator_bringup:/opt/ros/jazzy /usr/bin/cmake --install /ros2_ws/ros_workshop_ws/src/build/open_manipulator_description
+[2.271s] -- Install configuration: ""
+[2.272s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/launch
+[2.272s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/launch/model_y.launch.py
+[2.272s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/launch/model_x.launch.py
+[2.272s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes
+[2.274s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/om_y_follower
+[2.274s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/om_y_follower/flange.stl
+[2.277s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/om_y_follower/link1.stl
+[2.278s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/om_y_follower/base_unit.stl
+[2.278s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/om_y_follower/link3.stl
+[2.278s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/om_y_follower/link4.stl
+[2.278s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/om_y_follower/link2.stl
+[2.278s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/om_y_follower/link6.stl
+[2.278s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/om_y_follower/link5.stl
+[2.278s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/om_y_leader
+[2.278s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/om_y_leader/link1.stl
+[2.278s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/om_y_leader/base_unit.stl
+[2.278s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/om_y_leader/link7.stl
+[2.279s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/om_y_leader/link3.stl
+[2.279s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/om_y_leader/link4.stl
+[2.279s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/om_y_leader/link2.stl
+[2.279s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/om_y_leader/link6.stl
+[2.279s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/om_y_leader/link5.stl
+[2.279s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/rh_p12_rn_a
+[2.279s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/rh_p12_rn_a/r1.stl
+[2.279s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/rh_p12_rn_a/l2.stl
+[2.279s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/rh_p12_rn_a/base.stl
+[2.279s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/rh_p12_rn_a/r2.stl
+[2.279s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/rh_p12_rn_a/l1.stl
+[2.280s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/om_x
+[2.280s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/om_x/link1.stl
+[2.280s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/om_x/link3.stl
+[2.280s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/om_x/link4.stl
+[2.280s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/om_x/link2.stl
+[2.280s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/om_x/plate.stl
+[2.280s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/om_x/link5.stl
+[2.280s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/om_x/gripper_left_palm.stl
+[2.280s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/om_x/gripper_right_palm.stl
+[2.280s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/om_y
+[2.281s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/om_y/flange.stl
+[2.281s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/om_y/link1.stl
+[2.281s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/om_y/base_unit.stl
+[2.281s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/om_y/link3.stl
+[2.281s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/om_y/link4.stl
+[2.281s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/om_y/link2.stl
+[2.281s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/om_y/link6.stl
+[2.282s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/meshes/om_y/link5.stl
+[2.282s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/rviz
+[2.282s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/rviz/open_manipulator.rviz
+[2.282s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/urdf
+[2.282s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/urdf/om_y_follower
+[2.282s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/urdf/om_y_follower/open_manipulator_y_follower_arm.urdf.xacro
+[2.282s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/urdf/om_y_follower/open_manipulator_y_follower.urdf.xacro
+[2.282s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/urdf/om_y_leader
+[2.282s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/urdf/om_y_leader/open_manipulator_y_leader.urdf.xacro
+[2.282s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/urdf/om_y_leader/open_manipulator_y_leader_arm.urdf
+[2.282s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/urdf/om_x
+[2.283s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/urdf/om_x/open_manipulator_x.urdf.xacro
+[2.283s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/urdf/om_x/open_manipulator_x_arm.urdf.xacro
+[2.283s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/urdf/om_y
+[2.283s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/urdf/om_y/open_manipulator_y_arm.urdf.xacro
+[2.283s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/urdf/om_y/open_manipulator_y.urdf.xacro
+[2.283s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/urdf/rh_p12_rn_a.urdf.xacro
+[2.283s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/gazebo
+[2.283s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/gazebo/open_manipulator_x.gazebo.xacro
+[2.283s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/gazebo/rh_p12_rn_a.gazebo.xacro
+[2.284s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/gazebo/open_manipulator_y_arm.gazebo.xacro
+[2.284s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/ros2_control
+[2.284s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/ros2_control/open_manipulator_y_system.ros2_control.xacro
+[2.284s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/ros2_control/open_manipulator_y_leader_system.ros2_control.xacro
+[2.284s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/ros2_control/open_manipulator_x_system.ros2_control.xacro
+[2.284s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/ros2_control/open_manipulator_y_end_unit.ros2_control.xacro
+[2.284s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/ros2_control/open_manipulator_y_follower_system.ros2_control.xacro
+[2.284s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/ament_index/resource_index/package_run_dependencies/open_manipulator_description
+[2.284s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/ament_index/resource_index/parent_prefix_path/open_manipulator_description
+[2.284s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/environment/ament_prefix_path.sh
+[2.285s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/environment/ament_prefix_path.dsv
+[2.295s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/environment/path.sh
+[2.296s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/environment/path.dsv
+[2.296s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/local_setup.bash
+[2.296s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/local_setup.sh
+[2.297s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/local_setup.zsh
+[2.298s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/local_setup.dsv
+[2.298s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/package.dsv
+[2.298s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/ament_index/resource_index/packages/open_manipulator_description
+[2.299s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/cmake/open_manipulator_descriptionConfig.cmake
+[2.299s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/cmake/open_manipulator_descriptionConfig-version.cmake
+[2.299s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_description/share/open_manipulator_description/package.xml
+[2.304s] Invoked command in '/ros2_ws/ros_workshop_ws/src/build/open_manipulator_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros2_ws/ros_workshop_ws/install/open_manipulator_teleop:/ros2_ws/ros_workshop_ws/install/open_manipulator_bringup:/opt/ros/jazzy /usr/bin/cmake --install /ros2_ws/ros_workshop_ws/src/build/open_manipulator_description

@@ -1,0 +1,52 @@
+[0.053s] Invoking command in '/ros2_ws/ros_workshop_ws/build/open_manipulator_collision': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros2_ws/ros_workshop_ws/install/open_manipulator_teleop:/ros2_ws/ros_workshop_ws/install/open_manipulator_bringup:/opt/ros/jazzy /usr/bin/cmake /ros2_ws/ros_workshop_ws/src/open_manipulator/open_manipulator_collision -DCMAKE_INSTALL_PREFIX=/ros2_ws/ros_workshop_ws/install/open_manipulator_collision
+[0.445s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.446s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.453s] -- Found rclcpp: 28.1.9 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.505s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.513s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.532s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.556s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.660s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.666s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.790s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.888s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.909s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[0.968s] -- Found visualization_msgs: 5.3.6 (/opt/ros/jazzy/share/visualization_msgs/cmake)
+[1.013s] -- Found kdl_parser: 2.11.0 (/opt/ros/jazzy/share/kdl_parser/cmake)
+[1.015s] -- Found eigen3_cmake_module: 0.3.0 (/opt/ros/jazzy/share/eigen3_cmake_module/cmake)
+[1.017s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.019s] -- Found urdf: 2.10.0 (/opt/ros/jazzy/share/urdf/cmake)
+[1.194s] -- Configuring done (1.1s)
+[1.219s] -- Generating done (0.0s)
+[1.225s] -- Build files have been written to: /ros2_ws/ros_workshop_ws/build/open_manipulator_collision
+[1.259s] Invoked command in '/ros2_ws/ros_workshop_ws/build/open_manipulator_collision' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros2_ws/ros_workshop_ws/install/open_manipulator_teleop:/ros2_ws/ros_workshop_ws/install/open_manipulator_bringup:/opt/ros/jazzy /usr/bin/cmake /ros2_ws/ros_workshop_ws/src/open_manipulator/open_manipulator_collision -DCMAKE_INSTALL_PREFIX=/ros2_ws/ros_workshop_ws/install/open_manipulator_collision
+[1.262s] Invoking command in '/ros2_ws/ros_workshop_ws/build/open_manipulator_collision': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros2_ws/ros_workshop_ws/install/open_manipulator_teleop:/ros2_ws/ros_workshop_ws/install/open_manipulator_bringup:/opt/ros/jazzy /usr/bin/cmake --build /ros2_ws/ros_workshop_ws/build/open_manipulator_collision -- -j16 -l16
+[1.399s] [100%] Built target self_collision_node
+[1.419s] Invoked command in '/ros2_ws/ros_workshop_ws/build/open_manipulator_collision' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros2_ws/ros_workshop_ws/install/open_manipulator_teleop:/ros2_ws/ros_workshop_ws/install/open_manipulator_bringup:/opt/ros/jazzy /usr/bin/cmake --build /ros2_ws/ros_workshop_ws/build/open_manipulator_collision -- -j16 -l16
+[1.419s] Invoking command in '/ros2_ws/ros_workshop_ws/build/open_manipulator_collision': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros2_ws/ros_workshop_ws/install/open_manipulator_teleop:/ros2_ws/ros_workshop_ws/install/open_manipulator_bringup:/opt/ros/jazzy /usr/bin/cmake --install /ros2_ws/ros_workshop_ws/build/open_manipulator_collision
+[1.433s] -- Install configuration: ""
+[1.434s] -- Execute custom install script
+[1.434s] -- Up-to-date symlink: /ros2_ws/ros_workshop_ws/install/open_manipulator_collision/lib/open_manipulator_collision/self_collision_node
+[1.434s] -- Up-to-date symlink: /ros2_ws/ros_workshop_ws/install/open_manipulator_collision/include//open_manipulator_collision/self_collision_node.hpp
+[1.435s] -- Up-to-date symlink: /ros2_ws/ros_workshop_ws/install/open_manipulator_collision/share/open_manipulator_collision/self_collision.launch.py
+[1.435s] -- Up-to-date symlink: /ros2_ws/ros_workshop_ws/install/open_manipulator_collision/share/open_manipulator_collision/environment/library_path.sh
+[1.435s] -- Up-to-date symlink: /ros2_ws/ros_workshop_ws/install/open_manipulator_collision/share/open_manipulator_collision/environment/library_path.dsv
+[1.435s] -- Up-to-date symlink: /ros2_ws/ros_workshop_ws/install/open_manipulator_collision/share/ament_index/resource_index/package_run_dependencies/open_manipulator_collision
+[1.436s] -- Up-to-date symlink: /ros2_ws/ros_workshop_ws/install/open_manipulator_collision/share/ament_index/resource_index/parent_prefix_path/open_manipulator_collision
+[1.436s] -- Up-to-date symlink: /ros2_ws/ros_workshop_ws/install/open_manipulator_collision/share/open_manipulator_collision/environment/ament_prefix_path.sh
+[1.436s] -- Up-to-date symlink: /ros2_ws/ros_workshop_ws/install/open_manipulator_collision/share/open_manipulator_collision/environment/ament_prefix_path.dsv
+[1.436s] -- Up-to-date symlink: /ros2_ws/ros_workshop_ws/install/open_manipulator_collision/share/open_manipulator_collision/environment/path.sh
+[1.436s] -- Up-to-date symlink: /ros2_ws/ros_workshop_ws/install/open_manipulator_collision/share/open_manipulator_collision/environment/path.dsv
+[1.437s] -- Up-to-date symlink: /ros2_ws/ros_workshop_ws/install/open_manipulator_collision/share/open_manipulator_collision/local_setup.bash
+[1.437s] -- Up-to-date symlink: /ros2_ws/ros_workshop_ws/install/open_manipulator_collision/share/open_manipulator_collision/local_setup.sh
+[1.437s] -- Up-to-date symlink: /ros2_ws/ros_workshop_ws/install/open_manipulator_collision/share/open_manipulator_collision/local_setup.zsh
+[1.437s] -- Up-to-date symlink: /ros2_ws/ros_workshop_ws/install/open_manipulator_collision/share/open_manipulator_collision/local_setup.dsv
+[1.437s] -- Symlinking: /ros2_ws/ros_workshop_ws/install/open_manipulator_collision/share/open_manipulator_collision/package.dsv
+[1.458s] -- Up-to-date symlink: /ros2_ws/ros_workshop_ws/install/open_manipulator_collision/share/ament_index/resource_index/packages/open_manipulator_collision
+[1.458s] -- Up-to-date symlink: /ros2_ws/ros_workshop_ws/install/open_manipulator_collision/share/open_manipulator_collision/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.459s] -- Up-to-date symlink: /ros2_ws/ros_workshop_ws/install/open_manipulator_collision/share/open_manipulator_collision/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.459s] -- Up-to-date symlink: /ros2_ws/ros_workshop_ws/install/open_manipulator_collision/share/open_manipulator_collision/cmake/ament_cmake_export_libraries-extras.cmake
+[1.459s] -- Up-to-date symlink: /ros2_ws/ros_workshop_ws/install/open_manipulator_collision/share/open_manipulator_collision/cmake/open_manipulator_collisionConfig.cmake
+[1.459s] -- Up-to-date symlink: /ros2_ws/ros_workshop_ws/install/open_manipulator_collision/share/open_manipulator_collision/cmake/open_manipulator_collisionConfig-version.cmake
+[1.459s] -- Up-to-date symlink: /ros2_ws/ros_workshop_ws/install/open_manipulator_collision/share/open_manipulator_collision/package.xml
+[1.463s] Invoked command in '/ros2_ws/ros_workshop_ws/build/open_manipulator_collision' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros2_ws/ros_workshop_ws/install/open_manipulator_teleop:/ros2_ws/ros_workshop_ws/install/open_manipulator_bringup:/opt/ros/jazzy /usr/bin/cmake --install /ros2_ws/ros_workshop_ws/build/open_manipulator_collision

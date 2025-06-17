@@ -1,0 +1,1 @@
+/ros2_ws/ros_workshop_ws/build/dynamixel_interfaces/rosidl_generator_cpp/dynamixel_interfaces/srv/detail/get_data_from_dxl__traits.hpp

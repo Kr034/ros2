@@ -1,0 +1,1 @@
+/ros2_ws/ros_workshop_ws/src/DynamixelSDK/ros/dynamixel_sdk_examples/src/read_write_node.py

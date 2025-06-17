@@ -1,0 +1,27 @@
+version: "3.8"
+services:
+  ros2:
+    image: ros2-jazzy-noble
+    container_name: ros2_jazzy_gui
+    environment:
+      - QT_X11_NO_MITSHM=1
+      - TURTLEBOT3_MODEL=burger
+      - ROS_DOMAIN_ID=127
+      - DISPLAY=:0
+      - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+      - LANG=en_US.UTF-8
+      - LC_ALL=en_US.UTF-8
+    hostname: burger_127
+    network_mode: host  # important pour Wayland & X11
+    stdin_open: true
+    tty: true
+    volumes:
+      - /root/.bash_history:/root/.bash_history:rw
+      - ${HOME}/.X11-unix:/tmp/.X11-unix:rw
+      - ${HOME}/ros2_ws:/ros2_ws:rw
+      - ${HOME}/.ros:/root/.ros:rw
+      - ${HOME}/.colcon:/root/.colcon:rw
+    working_dir: /ros2_ws
+
+
+

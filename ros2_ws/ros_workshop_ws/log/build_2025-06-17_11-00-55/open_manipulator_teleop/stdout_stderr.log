@@ -1,0 +1,24 @@
+running develop
+running egg_info
+creating open_manipulator_teleop.egg-info
+writing open_manipulator_teleop.egg-info/PKG-INFO
+writing dependency_links to open_manipulator_teleop.egg-info/dependency_links.txt
+writing entry points to open_manipulator_teleop.egg-info/entry_points.txt
+writing requirements to open_manipulator_teleop.egg-info/requires.txt
+writing top-level names to open_manipulator_teleop.egg-info/top_level.txt
+writing manifest file 'open_manipulator_teleop.egg-info/SOURCES.txt'
+reading manifest file 'open_manipulator_teleop.egg-info/SOURCES.txt'
+writing manifest file 'open_manipulator_teleop.egg-info/SOURCES.txt'
+running build_ext
+Creating /ros2_ws/ros_workshop_ws/install/open_manipulator_teleop/lib/python3.12/site-packages/open-manipulator-teleop.egg-link (link to .)
+Installing keyboard_control_x script to /ros2_ws/ros_workshop_ws/install/open_manipulator_teleop/lib/open_manipulator_teleop
+Installing keyboard_control_y script to /ros2_ws/ros_workshop_ws/install/open_manipulator_teleop/lib/open_manipulator_teleop
+Installing keyboard_control_y_follower script to /ros2_ws/ros_workshop_ws/install/open_manipulator_teleop/lib/open_manipulator_teleop
+
+Installed /ros2_ws/ros_workshop_ws/build/open_manipulator_teleop
+running symlink_data
+creating /ros2_ws/ros_workshop_ws/install/open_manipulator_teleop/share/ament_index
+creating /ros2_ws/ros_workshop_ws/install/open_manipulator_teleop/share/ament_index/resource_index
+creating /ros2_ws/ros_workshop_ws/install/open_manipulator_teleop/share/ament_index/resource_index/packages
+symbolically linking /ros2_ws/ros_workshop_ws/build/open_manipulator_teleop/resource/open_manipulator_teleop -> /ros2_ws/ros_workshop_ws/install/open_manipulator_teleop/share/ament_index/resource_index/packages
+symbolically linking /ros2_ws/ros_workshop_ws/build/open_manipulator_teleop/package.xml -> /ros2_ws/ros_workshop_ws/install/open_manipulator_teleop/share/open_manipulator_teleop

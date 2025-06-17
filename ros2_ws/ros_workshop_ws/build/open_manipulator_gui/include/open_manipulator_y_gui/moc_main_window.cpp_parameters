@@ -1,0 +1,5 @@
+-I/ros2_ws/ros_workshop_ws/src/open_manipulator/open_manipulator_gui
+-I/ros2_ws/ros_workshop_ws/build/open_manipulator_gui
+-o
+/ros2_ws/ros_workshop_ws/build/open_manipulator_gui/include/open_manipulator_y_gui/moc_main_window.cpp
+/ros2_ws/ros_workshop_ws/src/open_manipulator/open_manipulator_gui/include/open_manipulator_y_gui/main_window.hpp

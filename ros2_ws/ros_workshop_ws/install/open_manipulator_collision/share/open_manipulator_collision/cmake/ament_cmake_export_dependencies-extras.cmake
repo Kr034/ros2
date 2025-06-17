@@ -1,0 +1,1 @@
+/ros2_ws/ros_workshop_ws/build/open_manipulator_collision/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake

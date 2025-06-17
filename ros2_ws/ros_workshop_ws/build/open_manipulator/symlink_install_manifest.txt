@@ -1,0 +1,15 @@
+/ros2_ws/ros_workshop_ws/install/open_manipulator/share/ament_index/resource_index/package_run_dependencies/open_manipulator
+/ros2_ws/ros_workshop_ws/install/open_manipulator/share/ament_index/resource_index/parent_prefix_path/open_manipulator
+/ros2_ws/ros_workshop_ws/install/open_manipulator/share/open_manipulator/environment/ament_prefix_path.sh
+/ros2_ws/ros_workshop_ws/install/open_manipulator/share/open_manipulator/environment/ament_prefix_path.dsv
+/ros2_ws/ros_workshop_ws/install/open_manipulator/share/open_manipulator/environment/path.sh
+/ros2_ws/ros_workshop_ws/install/open_manipulator/share/open_manipulator/environment/path.dsv
+/ros2_ws/ros_workshop_ws/install/open_manipulator/share/open_manipulator/local_setup.bash
+/ros2_ws/ros_workshop_ws/install/open_manipulator/share/open_manipulator/local_setup.sh
+/ros2_ws/ros_workshop_ws/install/open_manipulator/share/open_manipulator/local_setup.zsh
+/ros2_ws/ros_workshop_ws/install/open_manipulator/share/open_manipulator/local_setup.dsv
+/ros2_ws/ros_workshop_ws/install/open_manipulator/share/open_manipulator/package.dsv
+/ros2_ws/ros_workshop_ws/install/open_manipulator/share/ament_index/resource_index/packages/open_manipulator
+/ros2_ws/ros_workshop_ws/install/open_manipulator/share/open_manipulator/cmake/open_manipulatorConfig.cmake
+/ros2_ws/ros_workshop_ws/install/open_manipulator/share/open_manipulator/cmake/open_manipulatorConfig-version.cmake
+/ros2_ws/ros_workshop_ws/install/open_manipulator/share/open_manipulator/package.xml

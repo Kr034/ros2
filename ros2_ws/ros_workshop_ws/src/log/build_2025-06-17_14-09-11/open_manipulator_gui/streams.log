@@ -1,0 +1,119 @@
+[0.059s] Invoking command in '/ros2_ws/ros_workshop_ws/src/build/open_manipulator_gui': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros2_ws/ros_workshop_ws/install/open_manipulator_teleop:/ros2_ws/ros_workshop_ws/install/open_manipulator_bringup:/opt/ros/jazzy /usr/bin/cmake /ros2_ws/ros_workshop_ws/src/open_manipulator/open_manipulator_gui -DCMAKE_INSTALL_PREFIX=/ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui
+[0.136s] -- The C compiler identification is GNU 13.3.0
+[0.227s] -- The CXX compiler identification is GNU 13.3.0
+[0.252s] -- Detecting C compiler ABI info
+[0.425s] -- Detecting C compiler ABI info - done
+[0.438s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.438s] -- Detecting C compile features
+[0.438s] -- Detecting C compile features - done
+[0.453s] -- Detecting CXX compiler ABI info
+[0.628s] -- Detecting CXX compiler ABI info - done
+[0.644s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.644s] -- Detecting CXX compile features
+[0.645s] -- Detecting CXX compile features - done
+[0.662s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.954s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.301s] -- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[1.465s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.532s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.582s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.638s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.762s] -- Found rclcpp: 28.1.9 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.946s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.957s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[2.155s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[2.198s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[2.253s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.405s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[2.453s] -- Found moveit_msgs: 2.6.0 (/opt/ros/jazzy/share/moveit_msgs/cmake)
+[2.846s] -- Found moveit_ros_planning: 2.12.3 (/opt/ros/jazzy/share/moveit_ros_planning/cmake)
+[3.145s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread chrono 
+[3.211s] -- Found parameter_traits: 0.4.0 (/opt/ros/jazzy/share/parameter_traits/cmake)
+[3.260s] -- Found rclcpp_lifecycle: 28.1.9 (/opt/ros/jazzy/share/rclcpp_lifecycle/cmake)
+[3.399s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[3.586s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: filesystem 
+[3.735s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[3.735s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[4.192s] -- Found moveit_ros_planning_interface: 2.12.3 (/opt/ros/jazzy/share/moveit_ros_planning_interface/cmake)
+[4.198s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: date_time filesystem program_options system thread 
+[4.225s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: thread system filesystem regex date_time program_options 
+[4.283s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread 
+[4.535s] -- Configuring done (4.5s)
+[4.688s] -- Generating done (0.1s)
+[4.706s] -- Build files have been written to: /ros2_ws/ros_workshop_ws/src/build/open_manipulator_gui
+[4.744s] Invoked command in '/ros2_ws/ros_workshop_ws/src/build/open_manipulator_gui' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros2_ws/ros_workshop_ws/install/open_manipulator_teleop:/ros2_ws/ros_workshop_ws/install/open_manipulator_bringup:/opt/ros/jazzy /usr/bin/cmake /ros2_ws/ros_workshop_ws/src/open_manipulator/open_manipulator_gui -DCMAKE_INSTALL_PREFIX=/ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui
+[4.744s] Invoking command in '/ros2_ws/ros_workshop_ws/src/build/open_manipulator_gui': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros2_ws/ros_workshop_ws/install/open_manipulator_teleop:/ros2_ws/ros_workshop_ws/install/open_manipulator_bringup:/opt/ros/jazzy /usr/bin/cmake --build /ros2_ws/ros_workshop_ws/src/build/open_manipulator_gui -- -j16 -l16
+[4.851s] [  3%] [34m[1mGenerating ui_x_main_window.h[0m
+[4.875s] [  7%] [34m[1mGenerating ui_y_main_window.h[0m
+[4.907s] [ 10%] [34m[1mGenerating open_manipulator_x_gui/ui_x_main_window.h[0m
+[4.936s] [ 14%] [34m[1mGenerating open_manipulator_y_gui/ui_y_main_window.h[0m
+[4.980s] [ 14%] Built target copy_ui_headers
+[5.026s] [ 14%] Built target open_manipulator_x_gui_node_autogen_timestamp_deps
+[5.060s] [ 14%] Built target open_manipulator_y_gui_node_autogen_timestamp_deps
+[5.107s] [ 17%] [34m[1mAutomatic MOC and UIC for target open_manipulator_x_gui_node[0m
+[5.187s] [ 17%] Built target open_manipulator_x_gui_node_autogen
+[5.221s] [ 21%] [34m[1mAutomatic MOC and UIC for target open_manipulator_y_gui_node[0m
+[5.313s] [ 21%] Built target open_manipulator_y_gui_node_autogen
+[5.341s] [ 25%] [34m[1mGenerating include/open_manipulator_x_gui/moc_main_window.cpp[0m
+[5.382s] [ 28%] [34m[1mGenerating include/open_manipulator_x_gui/moc_qnode.cpp[0m
+[5.439s] [ 32%] [32mBuilding CXX object CMakeFiles/open_manipulator_x_gui_node.dir/open_manipulator_x_gui_node_autogen/mocs_compilation.cpp.o[0m
+[5.483s] [ 35%] [32mBuilding CXX object CMakeFiles/open_manipulator_x_gui_node.dir/include/open_manipulator_x_gui/moc_qnode.cpp.o[0m
+[16.602s] [ 39%] [32mBuilding CXX object CMakeFiles/open_manipulator_x_gui_node.dir/include/open_manipulator_x_gui/moc_main_window.cpp.o[0m
+[27.719s] [ 42%] [32mBuilding CXX object CMakeFiles/open_manipulator_x_gui_node.dir/src/om_x/qnode.cpp.o[0m
+[38.044s] [ 46%] [32mBuilding CXX object CMakeFiles/open_manipulator_x_gui_node.dir/src/om_x/main_window.cpp.o[0m
+[48.924s] [ 50%] [32mBuilding CXX object CMakeFiles/open_manipulator_x_gui_node.dir/src/om_x/main.cpp.o[0m
+[60.324s] [ 53%] [32m[1mLinking CXX executable open_manipulator_x_gui_node[0m
+[62.344s] [ 60%] Built target open_manipulator_x_gui_node
+[62.358s] [ 67%] [34m[1mGenerating include/open_manipulator_y_gui/moc_main_window.cpp[0m
+[62.358s] [ 67%] [34m[1mGenerating include/open_manipulator_y_gui/moc_qnode.cpp[0m
+[62.406s] [ 75%] [32mBuilding CXX object CMakeFiles/open_manipulator_y_gui_node.dir/open_manipulator_y_gui_node_autogen/mocs_compilation.cpp.o[0m
+[62.406s] [ 75%] [32mBuilding CXX object CMakeFiles/open_manipulator_y_gui_node.dir/src/om_y/main.cpp.o[0m
+[62.437s] [ 78%] [32mBuilding CXX object CMakeFiles/open_manipulator_y_gui_node.dir/include/open_manipulator_y_gui/moc_qnode.cpp.o[0m
+[74.099s] [ 85%] [32mBuilding CXX object CMakeFiles/open_manipulator_y_gui_node.dir/include/open_manipulator_y_gui/moc_main_window.cpp.o[0m
+[74.099s] [ 85%] [32mBuilding CXX object CMakeFiles/open_manipulator_y_gui_node.dir/src/om_y/qnode.cpp.o[0m
+[83.776s] [ 89%] [32mBuilding CXX object CMakeFiles/open_manipulator_y_gui_node.dir/src/om_y/main_window.cpp.o[0m
+[94.258s] [ 92%] [32m[1mLinking CXX executable open_manipulator_y_gui_node[0m
+[96.197s] [100%] Built target open_manipulator_y_gui_node
+[96.213s] Invoked command in '/ros2_ws/ros_workshop_ws/src/build/open_manipulator_gui' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros2_ws/ros_workshop_ws/install/open_manipulator_teleop:/ros2_ws/ros_workshop_ws/install/open_manipulator_bringup:/opt/ros/jazzy /usr/bin/cmake --build /ros2_ws/ros_workshop_ws/src/build/open_manipulator_gui -- -j16 -l16
+[96.214s] Invoking command in '/ros2_ws/ros_workshop_ws/src/build/open_manipulator_gui': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros2_ws/ros_workshop_ws/install/open_manipulator_teleop:/ros2_ws/ros_workshop_ws/install/open_manipulator_bringup:/opt/ros/jazzy /usr/bin/cmake --install /ros2_ws/ros_workshop_ws/src/build/open_manipulator_gui
+[96.225s] -- Install configuration: ""
+[96.225s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui/lib/open_manipulator_gui/open_manipulator_x_gui_node
+[96.229s] -- Set non-toolchain portion of runtime path of "/ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui/lib/open_manipulator_gui/open_manipulator_x_gui_node" to ""
+[96.229s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui/lib/open_manipulator_gui/open_manipulator_y_gui_node
+[96.229s] -- Set non-toolchain portion of runtime path of "/ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui/lib/open_manipulator_gui/open_manipulator_y_gui_node" to ""
+[96.230s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui/include
+[96.230s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui/include/open_manipulator_x_gui
+[96.230s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui/include/open_manipulator_x_gui/main_window.hpp
+[96.230s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui/include/open_manipulator_x_gui/qnode.hpp
+[96.230s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui/include/open_manipulator_y_gui
+[96.230s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui/include/open_manipulator_y_gui/main_window.hpp
+[96.230s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui/include/open_manipulator_y_gui/qnode.hpp
+[96.231s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui/share/open_manipulator_gui/launch
+[96.231s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui/share/open_manipulator_gui/launch/open_manipulator_x_gui.launch.py
+[96.231s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui/share/open_manipulator_gui/launch/open_manipulator_y_gui.launch.py
+[96.231s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui/share/open_manipulator_gui/ui
+[96.231s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui/share/open_manipulator_gui/ui/y_main_window.ui
+[96.231s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui/share/open_manipulator_gui/ui/x_main_window.ui
+[96.231s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui/share/open_manipulator_gui/config
+[96.231s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui/share/open_manipulator_gui/config/om_y_joint_log.csv
+[96.231s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui/share/open_manipulator_gui/config/om_x_joint_log.csv
+[96.231s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui/share/open_manipulator_gui/environment/library_path.sh
+[96.231s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui/share/open_manipulator_gui/environment/library_path.dsv
+[96.231s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui/share/ament_index/resource_index/package_run_dependencies/open_manipulator_gui
+[96.231s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui/share/ament_index/resource_index/parent_prefix_path/open_manipulator_gui
+[96.231s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui/share/open_manipulator_gui/environment/ament_prefix_path.sh
+[96.232s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui/share/open_manipulator_gui/environment/ament_prefix_path.dsv
+[96.232s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui/share/open_manipulator_gui/environment/path.sh
+[96.232s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui/share/open_manipulator_gui/environment/path.dsv
+[96.232s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui/share/open_manipulator_gui/local_setup.bash
+[96.232s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui/share/open_manipulator_gui/local_setup.sh
+[96.232s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui/share/open_manipulator_gui/local_setup.zsh
+[96.232s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui/share/open_manipulator_gui/local_setup.dsv
+[96.232s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui/share/open_manipulator_gui/package.dsv
+[96.233s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui/share/ament_index/resource_index/packages/open_manipulator_gui
+[96.233s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui/share/open_manipulator_gui/cmake/ament_cmake_export_include_directories-extras.cmake
+[96.233s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui/share/open_manipulator_gui/cmake/ament_cmake_export_libraries-extras.cmake
+[96.233s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui/share/open_manipulator_gui/cmake/open_manipulator_guiConfig.cmake
+[96.233s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui/share/open_manipulator_gui/cmake/open_manipulator_guiConfig-version.cmake
+[96.233s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_gui/share/open_manipulator_gui/package.xml
+[96.235s] Invoked command in '/ros2_ws/ros_workshop_ws/src/build/open_manipulator_gui' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros2_ws/ros_workshop_ws/install/open_manipulator_teleop:/ros2_ws/ros_workshop_ws/install/open_manipulator_bringup:/opt/ros/jazzy /usr/bin/cmake --install /ros2_ws/ros_workshop_ws/src/build/open_manipulator_gui

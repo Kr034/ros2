@@ -1,0 +1,77 @@
+[0.058s] Invoking command in '/ros2_ws/ros_workshop_ws/src/build/open_manipulator_playground': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros2_ws/ros_workshop_ws/install/open_manipulator_teleop:/ros2_ws/ros_workshop_ws/install/open_manipulator_bringup:/opt/ros/jazzy /usr/bin/cmake /ros2_ws/ros_workshop_ws/src/open_manipulator/open_manipulator_playground -DCMAKE_INSTALL_PREFIX=/ros2_ws/ros_workshop_ws/src/install/open_manipulator_playground
+[0.153s] -- The C compiler identification is GNU 13.3.0
+[0.263s] -- The CXX compiler identification is GNU 13.3.0
+[0.287s] -- Detecting C compiler ABI info
+[0.447s] -- Detecting C compiler ABI info - done
+[0.461s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.461s] -- Detecting C compile features
+[0.462s] -- Detecting C compile features - done
+[0.487s] -- Detecting CXX compiler ABI info
+[0.659s] -- Detecting CXX compiler ABI info - done
+[0.670s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.671s] -- Detecting CXX compile features
+[0.671s] -- Detecting CXX compile features - done
+[0.684s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.964s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.283s] -- Found moveit_ros_planning_interface: 2.12.3 (/opt/ros/jazzy/share/moveit_ros_planning_interface/cmake)
+[1.581s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: date_time filesystem program_options system thread 
+[1.766s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.816s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.871s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.929s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.612s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[2.842s] -- Found parameter_traits: 0.4.0 (/opt/ros/jazzy/share/parameter_traits/cmake)
+[3.009s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[3.016s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[3.250s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[3.284s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[3.325s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.524s] -- Found rclcpp_lifecycle: 28.1.9 (/opt/ros/jazzy/share/rclcpp_lifecycle/cmake)
+[3.613s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: filesystem 
+[3.779s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[3.779s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[4.184s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread chrono 
+[4.287s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: thread system filesystem regex date_time program_options 
+[4.348s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread 
+[4.580s] -- Configuring done (4.5s)
+[4.660s] -- Generating done (0.0s)
+[4.676s] -- Build files have been written to: /ros2_ws/ros_workshop_ws/src/build/open_manipulator_playground
+[4.700s] Invoked command in '/ros2_ws/ros_workshop_ws/src/build/open_manipulator_playground' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros2_ws/ros_workshop_ws/install/open_manipulator_teleop:/ros2_ws/ros_workshop_ws/install/open_manipulator_bringup:/opt/ros/jazzy /usr/bin/cmake /ros2_ws/ros_workshop_ws/src/open_manipulator/open_manipulator_playground -DCMAKE_INSTALL_PREFIX=/ros2_ws/ros_workshop_ws/src/install/open_manipulator_playground
+[4.702s] Invoking command in '/ros2_ws/ros_workshop_ws/src/build/open_manipulator_playground': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros2_ws/ros_workshop_ws/install/open_manipulator_teleop:/ros2_ws/ros_workshop_ws/install/open_manipulator_bringup:/opt/ros/jazzy /usr/bin/cmake --build /ros2_ws/ros_workshop_ws/src/build/open_manipulator_playground -- -j16 -l16
+[4.804s] [ 25%] [32mBuilding CXX object CMakeFiles/hello_moveit_omx.dir/src/hello_moveit_omx.cpp.o[0m
+[14.049s] [ 50%] [32m[1mLinking CXX executable hello_moveit_omx[0m
+[14.520s] [ 50%] Built target hello_moveit_omx
+[14.560s] [ 75%] [32mBuilding CXX object CMakeFiles/hello_moveit_omy.dir/src/hello_moveit_omy.cpp.o[0m
+[23.091s] [100%] [32m[1mLinking CXX executable hello_moveit_omy[0m
+[23.525s] [100%] Built target hello_moveit_omy
+[23.544s] Invoked command in '/ros2_ws/ros_workshop_ws/src/build/open_manipulator_playground' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros2_ws/ros_workshop_ws/install/open_manipulator_teleop:/ros2_ws/ros_workshop_ws/install/open_manipulator_bringup:/opt/ros/jazzy /usr/bin/cmake --build /ros2_ws/ros_workshop_ws/src/build/open_manipulator_playground -- -j16 -l16
+[23.545s] Invoking command in '/ros2_ws/ros_workshop_ws/src/build/open_manipulator_playground': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros2_ws/ros_workshop_ws/install/open_manipulator_teleop:/ros2_ws/ros_workshop_ws/install/open_manipulator_bringup:/opt/ros/jazzy /usr/bin/cmake --install /ros2_ws/ros_workshop_ws/src/build/open_manipulator_playground
+[23.561s] -- Install configuration: ""
+[23.562s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_playground/include
+[23.562s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_playground/include/open_manipulator_playground
+[23.562s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_playground/include/open_manipulator_playground/hello_moveit_omy.h
+[23.562s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_playground/include/open_manipulator_playground/hello_moveit_omx.h
+[23.562s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_playground/lib/open_manipulator_playground/hello_moveit_omx
+[23.562s] -- Set non-toolchain portion of runtime path of "/ros2_ws/ros_workshop_ws/src/install/open_manipulator_playground/lib/open_manipulator_playground/hello_moveit_omx" to ""
+[23.562s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_playground/lib/open_manipulator_playground/hello_moveit_omy
+[23.563s] -- Set non-toolchain portion of runtime path of "/ros2_ws/ros_workshop_ws/src/install/open_manipulator_playground/lib/open_manipulator_playground/hello_moveit_omy" to ""
+[23.563s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_playground/share/ament_index/resource_index/package_run_dependencies/open_manipulator_playground
+[23.564s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_playground/share/ament_index/resource_index/parent_prefix_path/open_manipulator_playground
+[23.564s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_playground/share/open_manipulator_playground/environment/ament_prefix_path.sh
+[23.564s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_playground/share/open_manipulator_playground/environment/ament_prefix_path.dsv
+[23.564s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_playground/share/open_manipulator_playground/environment/path.sh
+[23.564s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_playground/share/open_manipulator_playground/environment/path.dsv
+[23.565s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_playground/share/open_manipulator_playground/local_setup.bash
+[23.565s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_playground/share/open_manipulator_playground/local_setup.sh
+[23.565s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_playground/share/open_manipulator_playground/local_setup.zsh
+[23.565s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_playground/share/open_manipulator_playground/local_setup.dsv
+[23.565s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_playground/share/open_manipulator_playground/package.dsv
+[23.566s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_playground/share/ament_index/resource_index/packages/open_manipulator_playground
+[23.566s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_playground/share/open_manipulator_playground/cmake/export_open_manipulator_playgroundExport.cmake
+[23.566s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_playground/share/open_manipulator_playground/cmake/export_open_manipulator_playgroundExport-noconfig.cmake
+[23.566s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_playground/share/open_manipulator_playground/cmake/ament_cmake_export_include_directories-extras.cmake
+[23.566s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_playground/share/open_manipulator_playground/cmake/ament_cmake_export_targets-extras.cmake
+[23.566s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_playground/share/open_manipulator_playground/cmake/open_manipulator_playgroundConfig.cmake
+[23.566s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_playground/share/open_manipulator_playground/cmake/open_manipulator_playgroundConfig-version.cmake
+[23.567s] -- Installing: /ros2_ws/ros_workshop_ws/src/install/open_manipulator_playground/share/open_manipulator_playground/package.xml
+[23.569s] Invoked command in '/ros2_ws/ros_workshop_ws/src/build/open_manipulator_playground' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/ros2_ws/ros_workshop_ws/install/open_manipulator_teleop:/ros2_ws/ros_workshop_ws/install/open_manipulator_bringup:/opt/ros/jazzy /usr/bin/cmake --install /ros2_ws/ros_workshop_ws/src/build/open_manipulator_playground

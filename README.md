@@ -1,74 +1,105 @@
-## 🐳 ROS 2 + TurtleBot3 + OpenManipulator (Docker)
-
-### ✅ Prérequis
-
-1. Avoir `docker` et `docker-compose` installés
-2. Exécuter **avant** toute commande Docker :
-
-   ```bash
-   xhost +local:docker
-   ```
+Voici une version complète du **README** à placer à la racine de ton dépôt Git (par ex. [`ros2/`](https://github.com/Kr034/ros2)).
 
 ---
 
-### 🚀 Lancer le conteneur Docker
+## 📘 README.md — Mise en route avec Docker (ROS 2 Jazzy)
 
-1. **Build de l’image Docker :**
-
-   ```bash
-   docker build -t ros2-jazzy-noble .
-   ```
-
-2. **Lancer le conteneur :**
-
-   ```bash
-   docker-compose up -d
-   ```
-
-3. **Se connecter au terminal du conteneur :**
-
-   ```bash
-   docker exec -it ros2_jazzy_gui bash
-   ```
+Ce projet contient un environnement Docker prêt à l'emploi pour manipuler **TurtleBot3** et **OpenManipulator-X** dans **ROS 2 Jazzy**, avec MoveIt, Gazebo, RViz, et des démos personnalisées.
 
 ---
 
-### ⚙️ Initialisation du workspace ROS 2
+### ⚠️ Prérequis
 
-Une fois dans le conteneur :
+* Docker installé
+* Docker Compose installé
+* Un affichage X11 disponible (nécessaire pour RViz et Gazebo)
+* Ubuntu/Linux (testé sur Arch et Ubuntu 22.04)
+
+---
+
+### 🧪 Étapes de préparation (sur votre PC)
 
 ```bash
-bash /ros2_ws/script.sh
+# 1. Autoriser l'affichage X11 au container Docker
+xhost +local:docker
+
+# 2. Créer un dossier ros2_ws dans votre HOME (si pas déjà fait)
+mkdir -p ~/ros2_ws
+
+# 3. Cloner ce dépôt et copier les fichiers de configuration
+git clone https://github.com/Kr034/ros2.git
+cd ros2
+cp -r ros2_ws ~/ros2_ws/
 ```
 
 ---
 
-### 🔁 Utilisation classique (3 terminaux requis)
-
-Avant toute chose dans **chaque terminal** :
+### 🐳 Construction & lancement du conteneur Docker
 
 ```bash
-source /ros2_ws/ros_workshop_ws/install/setup.bash
+# 4. Construire l'image Docker
+docker build -t ros2-jazzy-noble .
+
+# 5. Lancer le conteneur avec Docker Compose
+docker-compose up -d
+
+# 6. Accéder au shell du container
+docker exec -it ros2_jazzy_gui bash
 ```
 
-Ensuite :
+---
 
-1. **Terminal 1 :** Gazebo simulation
+### 📜 Initialisation du workspace ROS (dans le conteneur)
 
-   ```bash
-   ros2 launch open_manipulator_bringup gazebo.launch.py
-   ```
+Une fois dans le terminal Docker, lance ce script pour configurer l’environnement complet :
 
-2. **Terminal 2 :** MoveIt2 avec OM-X
+```bash
+/ros2_ws/script.sh
+```
 
-   ```bash
-   LC_NUMERIC=en_US.UTF-8 ros2 launch open_manipulator_moveit_config moveit_core.launch.py
-   ```
+Ce script :
 
-3. **Terminal 3 :** Exécution du mouvement
-
-   ```bash
-   ros2 run open_manipulator_playground take_ball
-   ```
+* Clone les dépôts nécessaires (TurtleBot3, OpenManipulator, etc.)
+* Remplace les sources du package `open_manipulator_playground` avec `/ros2_ws/take_ball_src`
+* Compile avec `colcon build`
+* Configure les variables d’environnement dans `~/.bashrc`
 
 ---
+
+### 🚀 Lancer la simulation
+
+Ouvre **3 terminaux Docker** (ou utilise `tmux`/`tilix`) et exécute :
+
+**Terminal 1 : Gazebo**
+
+```bash
+source ros_workshop_ws/install/setup.sh
+ros2 launch open_manipulator_bringup gazebo.launch.py
+```
+
+**Terminal 2 : MoveIt**
+
+```bash
+source ros_workshop_ws/install/setup.sh
+LC_NUMERIC=en_US.UTF-8 ros2 launch open_manipulator_moveit_config moveit_core.launch.py
+```
+
+**Terminal 3 : Démo de manipulation**
+
+```bash
+source ros_workshop_ws/install/setup.sh
+ros2 run open_manipulator_playground take_ball
+```
+
+---
+
+### 📦 Contenu
+
+* `ros2_ws/`: environnement ROS 2 avec packages clonés + sources personnalisées
+* `take_ball_src/`: contient un `take_ball.cpp` personnalisé pour manipuler un objet
+* `script.sh`: script d’installation automatique dans le conteneur
+
+---
+
+Souhaites-tu aussi une version anglaise ou un badge Docker Hub si tu comptes publier l’image ?
+

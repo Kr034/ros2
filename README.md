@@ -25,7 +25,7 @@ mkdir -p ~/ros2_ws
 # 3. Cloner ce dépôt et copier les fichiers de configuration
 git clone https://github.com/Kr034/ros2.git
 cd ros2
-cp -r ros2_ws ~/ros2_ws/
+cp -r ros2_ws/* ~/ros2_ws/
 ```
 
 ---

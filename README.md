@@ -105,3 +105,48 @@ ros2 run open_manipulator_playground take_ball
 * `ros2_ws/`: environnement ROS 2 avec packages clonés + sources personnalisées
 * `take_ball_src/`: contient un `take_ball.cpp` personnalisé pour manipuler un objet
 * `script.sh`: script d’installation automatique dans le conteneur
+
+---
+
+## 📷 Utilisation de la webcam avec ROS 2
+
+### 1. Connexion au robot
+
+Avant de démarrer le module webcam, vous devez être connecté au robot et avoir lancé la pile de navigation.
+Veuillez suivre les instructions détaillées dans [nav-turtle-READ.md](https://github.com/Kr034/ros2/blob/main/nav-turtle-READ.md).
+
+Cela inclut :
+
+* Le lancement de Gazebo ou de la robotique réelle (selon votre configuration)
+* Le lancement de `navigation2` et du bringup TurtleBot3
+
+---
+
+### 2. Lancer la détection de doigts via la webcam
+
+Une fois la pile robot lancée, vous pouvez exécuter le module de détection de doigts utilisant Mediapipe et OpenCV. Ce module détecte les mains via la webcam et publie sur un topic ROS le **nombre de doigts levés**, en mettant à jour uniquement lorsqu'un changement est détecté.
+
+#### 📦 Lancement :
+
+Dans un terminal ROS 2 sourcé :
+
+```bash
+ros2 run turtlebot3_webcam talker
+```
+
+#### 🔎 Description :
+
+* Affiche en temps réel le flux de la caméra avec les landmarks des mains.
+* Calcule la somme des doigts levés (main gauche + main droite).
+* Affiche et publie le total uniquement lorsqu’il y a un changement.
+
+---
+
+### 💡 Prérequis
+
+Assurez-vous que :
+
+* Votre webcam est bien accessible dans le conteneur Docker.
+* Les dépendances `mediapipe` et `opencv-python` sont bien installées dans votre environnement ROS 2 (voir Dockerfile)
+
+---

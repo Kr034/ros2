@@ -1,1 +1,0 @@
-/ros2_ws/ros_workshop_ws/src/open_manipulator/open_manipulator_bringup/launch/hardware_y_follower.launch.py

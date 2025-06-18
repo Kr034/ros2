@@ -1,1 +1,0 @@
-/ros2_ws/ros_workshop_ws/src/open_manipulator/ros2_controller/om_spring_actuator_controller/include/spring_actuator_controller/visibility_control.h

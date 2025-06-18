@@ -1,1 +1,0 @@
-/ros2_ws/ros_workshop_ws/build/dynamixel_interfaces/rosidl_typesupport_introspection_c/dynamixel_interfaces/srv/detail/get_data_from_dxl__rosidl_typesupport_introspection_c.h

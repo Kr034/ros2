@@ -1,1 +1,0 @@
-/ros2_ws/ros_workshop_ws/src/dynamixel_hardware_interface/include/dynamixel_hardware_interface/dynamixel/dynamixel.hpp

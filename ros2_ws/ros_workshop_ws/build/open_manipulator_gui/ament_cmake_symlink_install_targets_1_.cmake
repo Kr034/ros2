@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/ros2_ws/ros_workshop_ws/build/open_manipulator_gui/open_manipulator_y_gui_node" "TARGETS" "open_manipulator_y_gui_node" "DESTINATION" "lib/open_manipulator_gui")

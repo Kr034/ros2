@@ -1,1 +1,0 @@
-/ros2_ws/ros_workshop_ws/build/dynamixel_interfaces/rosidl_generator_c/dynamixel_interfaces/msg/dynamixel_state.h

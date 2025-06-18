@@ -1,1 +1,0 @@
-/ros2_ws/ros_workshop_ws/src/open_manipulator/open_manipulator_description/launch/model_x.launch.py

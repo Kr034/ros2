@@ -33,6 +33,8 @@ cp -r ros2_ws/* ~/ros2_ws/
 ### 🐳 Construction & lancement du conteneur Docker
 
 ```bash
+sudo usermod -aG docker $USER
+exec su -l $USER
 # 4. Construire l'image Docker
 docker build -t ros2-jazzy-noble .
 
@@ -77,6 +79,8 @@ ros2 launch open_manipulator_bringup gazebo.launch.py
 **Terminal 2 : MoveIt**
 
 ```bash
+sudo usermod -aG docker $USER
+exec su -l $USER
 docker-compose up -d
 docker exec -it ros2_jazzy_gui bash
 source ros_workshop_ws/install/setup.sh
@@ -86,6 +90,8 @@ LC_NUMERIC=en_US.UTF-8 ros2 launch open_manipulator_moveit_config moveit_core.la
 **Terminal 3 : Démo de manipulation**
 
 ```bash
+sudo usermod -aG docker $USER
+exec su -l $USER
 docker-compose up -d
 docker exec -it ros2_jazzy_gui bash
 source ros_workshop_ws/install/setup.sh

@@ -112,41 +112,48 @@ ros2 run open_manipulator_playground take_ball
 
 ### 1. Connexion au robot
 
-Avant de démarrer le module webcam, vous devez être connecté au robot et avoir lancé la pile de navigation.
-Veuillez suivre les instructions détaillées dans [nav-turtle-READ.md](https://github.com/Kr034/ros2/blob/main/nav-turtle-READ.md).
+Avant d’utiliser la webcam, vous devez être connecté au robot et avoir lancé la pile de navigation.
+Veuillez suivre les instructions détaillées dans [`nav-turtle-READ.md`](https://github.com/Kr034/ros2/blob/main/nav-turtle-READ.md).
 
 Cela inclut :
 
-* Le lancement de Gazebo ou de la robotique réelle (selon votre configuration)
+* Le lancement de Gazebo ou de la robotique réelle
 * Le lancement de `navigation2` et du bringup TurtleBot3
 
 ---
 
 ### 2. Lancer la détection de doigts via la webcam
 
-Une fois la pile robot lancée, vous pouvez exécuter le module de détection de doigts utilisant Mediapipe et OpenCV. Ce module détecte les mains via la webcam et publie sur un topic ROS le **nombre de doigts levés**, en mettant à jour uniquement lorsqu'un changement est détecté.
+Une fois le robot prêt, exécutez le module de détection de doigts basé sur Mediapipe et OpenCV.
+Ce module détecte les mains via la webcam et publie sur un topic ROS le **nombre total de doigts levés** (main gauche + main droite).
 
-#### 📦 Lancement :
-
-Dans un terminal ROS 2 sourcé :
+#### ✅ Lancement
 
 ```bash
 ros2 run turtlebot3_webcam talker
 ```
 
-#### 🔎 Description :
+#### 🧠 Fonctionnalité
 
-* Affiche en temps réel le flux de la caméra avec les landmarks des mains.
-* Calcule la somme des doigts levés (main gauche + main droite).
-* Affiche et publie le total uniquement lorsqu’il y a un changement.
+* Affichage en temps réel du flux webcam avec les **landmarks des mains** dessinés.
+* Calcule **la somme des doigts levés** (main gauche + droite).
+* **Publication uniquement en cas de changement** sur un topic ROS.
+* Commandes de contrôle gestuel du robot :
+
+| Geste détecté                                                   | Action ROS     |
+| --------------------------------------------------------------- | -------------- |
+| 👋👋 **Deux mains ouvertes, paumes visibles**                   | Avancer        |
+| ✊✊ **Deux mains retournées, paumes non visibles**               | Reculer        |
+| ✊👋 **Main gauche fermée, main droite ouverte (paume visible)** | Aller à droite |
+| 👋✊ **Main droite fermée, main gauche ouverte (paume visible)** | Aller à gauche |
 
 ---
 
-### 💡 Prérequis
+### 🛠 Prérequis
 
-Assurez-vous que :
+* Une webcam fonctionnelle, accessible depuis le conteneur Docker.
+* Les paquets Python suivants doivent être installés dans l’environnement Docker :
 
-* Votre webcam est bien accessible dans le conteneur Docker.
-* Les dépendances `mediapipe` et `opencv-python` sont bien installées dans votre environnement ROS 2 (voir Dockerfile)
-
----
+  * `mediapipe`
+  * `opencv-python`
+* Ces dépendances sont installées dans l’image Docker fournie dans ce projet.

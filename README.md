@@ -17,7 +17,7 @@ Ce projet contient un environnement Docker prêt à l'emploi pour manipuler **Tu
 
 ```bash
 # 1. Autoriser l'affichage X11 au container Docker
-xhost +local:docker
+sudo xhost +local:docker
 
 # 2. Créer un dossier ros2_ws dans votre HOME (si pas déjà fait)
 mkdir -p ~/ros2_ws
@@ -50,6 +50,7 @@ docker exec -it ros2_jazzy_gui bash
 Une fois dans le terminal Docker, lance ce script pour configurer l’environnement complet :
 
 ```bash
+chmod +x /ros2_ws/script.sh
 /ros2_ws/script.sh
 ```
 

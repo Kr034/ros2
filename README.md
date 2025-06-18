@@ -1,7 +1,3 @@
-Voici une version complète du **README** à placer à la racine de ton dépôt Git (par ex. [`ros2/`](https://github.com/Kr034/ros2)).
-
----
-
 ## 📘 README.md — Mise en route avec Docker (ROS 2 Jazzy)
 
 Ce projet contient un environnement Docker prêt à l'emploi pour manipuler **TurtleBot3** et **OpenManipulator-X** dans **ROS 2 Jazzy**, avec MoveIt, Gazebo, RViz, et des démos personnalisées.
@@ -98,8 +94,3 @@ ros2 run open_manipulator_playground take_ball
 * `ros2_ws/`: environnement ROS 2 avec packages clonés + sources personnalisées
 * `take_ball_src/`: contient un `take_ball.cpp` personnalisé pour manipuler un objet
 * `script.sh`: script d’installation automatique dans le conteneur
-
----
-
-Souhaites-tu aussi une version anglaise ou un badge Docker Hub si tu comptes publier l’image ?
-

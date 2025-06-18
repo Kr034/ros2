@@ -127,9 +127,10 @@ Cela inclut :
 Une fois le robot prêt, exécutez le module de détection de doigts basé sur Mediapipe et OpenCV.
 Ce module détecte les mains via la webcam et publie sur un topic ROS le **nombre total de doigts levés** (main gauche + main droite).
 
-#### ✅ Lancement
+#### ✅ Lancement a partir du terminal docker ROS (voir plus haut)
 
 ```bash
+source ros_workshop_ws/install/setup.sh
 ros2 run turtlebot3_webcam talker
 ```
 

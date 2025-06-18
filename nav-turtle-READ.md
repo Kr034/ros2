@@ -54,7 +54,7 @@ Ce guide explique comment connecter, mettre à jour et piloter un robot TurtleBo
 
 ---
 
-## 💻 Configuration du PC (ROS 2)
+## 💻 Configuration du PC (ROS 2) Docker
 
 1. **Assurez-vous d'avoir** :
 

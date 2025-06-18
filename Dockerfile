@@ -38,6 +38,13 @@ RUN pip3 install -U \
     colcon-common-extensions \
     vcstool --break-system-packages
     
+# Supprime scipy system-wide et installe-le avec pip
+RUN apt remove -y python3-scipy && \
+    pip3 install scipy --break-system-packages && \
+    pip3 install mediapipe opencv-python --break-system-packages
+
+
+    
 # À la fin de ton Dockerfile
 RUN apt update && apt install -y \
   ros-jazzy-turtlebot3* \

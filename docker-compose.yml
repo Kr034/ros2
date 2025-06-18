@@ -15,6 +15,8 @@ services:
     network_mode: host  # important pour Wayland & X11
     stdin_open: true
     tty: true
+    devices:
+        - /dev/video0:/dev/video0  # Monte le périphérique webcam dans le conteneur
     volumes:
       - /root/.bash_history:/root/.bash_history:rw
       - ${HOME}/.X11-unix:/tmp/.X11-unix:rw

@@ -17,7 +17,8 @@ git clone -b jazzy https://github.com/ROBOTIS-GIT/open_manipulator.git
 # 💡 Copie des sources personnalisées (écrasement)
 echo "[📁] Remplacement du contenu de open_manipulator_playground par /ros2_ws/take_ball_src"
 cp -r /ros2_ws/take_ball_src/* /ros2_ws/ros_workshop_ws/src/open_manipulator/open_manipulator_playground/
-
+mkdir /ros2_ws/ros_workshop_ws/src/turtlebot3/turtlebot3_webcam
+cp -r /ros2_ws/turtlebot3_webcam_src/* /ros2_ws/ros_workshop_ws/src/turtlebot3/turtlebot3_webcam/
 # Compilation
 cd /ros2_ws/ros_workshop_ws
 colcon build --symlink-install

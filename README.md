@@ -4,12 +4,46 @@ Ce projet contient un environnement Docker prêt à l'emploi pour manipuler **Tu
 
 ---
 
+### 📦 Contenu
+
+Ce projet ROS 2 combine plusieurs modules pour démontrer une intégration complète entre perception, manipulation et navigation :
+
+- 🦾 **open_manipulator_playground** : Script C++ MoveIt 2 pour récupérer une balle avec le bras OpenManipulator-X.
+- 🧠 **finger_nav** : Interface gestuelle en Python utilisant MediaPipe + OpenCV, permettant de sélectionner un objectif avec les doigts (1 à 6), valider avec 10 doigts (paumes visibles), puis :
+  - Exécuter la prise d'objet avec le bras ;
+  - Envoyer le TurtleBot vers un point prédéfini.
+- 🤖 **turtlebot3 + navigation2** : Navigation autonome (Nav2) dans un environnement Gazebo simulé.
+- 🧩 **MoveIt 2** : Planification et exécution des trajectoires pour le bras manipulateur.
+- 🌍 **Gazebo** : Simulation du robot complet (TurtleBot + bras) dans un environnement 3D.
+
+L’interface est conçue pour fonctionner **sans clavier ni souris**, avec uniquement les gestes pour piloter la prise d’objet et le déplacement.
+
+---
+
+```bash
+🖐️  Chiffre (1 à 6)    ➜  Sélection d’un point
+🖐️🖐️ 10 doigts (paumes) ➜  Validation et déclenchement
+🦾  Bras → prend la balle
+🤖  Robot mobile → navigue automatiquement
+````
+
 ### ⚠️ Prérequis
 
 * Docker installé
 * Docker Compose installé
 * Un affichage X11 disponible (nécessaire pour RViz et Gazebo)
 * Ubuntu/Linux (testé sur Arch et Ubuntu 22.04)
+
+---
+### Connexion au robot
+
+Avant d’utiliser la webcam, vous devez être connecté au robot et avoir lancé la pile de navigation.
+Veuillez suivre les instructions détaillées dans [`nav-turtle-READ.md`](https://github.com/Kr034/ros2/blob/main/nav-turtle-READ.md).
+
+Cela inclut :
+
+* Le lancement de Gazebo ou de la robotique réelle
+* Le lancement de `navigation2` et du bringup TurtleBot3
 
 ---
 
@@ -117,7 +151,7 @@ Répétez la commande dans **trois** fenêtres séparées ; chacune exécutera u
 
 | Geste                                                                                                      | Action                                          |
 | ---------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
-| **Main(s) montrant un chiffre** (paume visible)                                                            | Sélection d’un point d’intérêt (chiffres 1 → 9) |
+| **Main(s) montrant un chiffre** (paume visible)                                                            | Sélection d’un point d’intérêt (chiffres 1 → 6) |
 | **10 doigts levés** (paumes visibles) pendant ≥ 5 s                                                        | Validation de la sélection                      |
 | Le bras récupère la balle (action *take\_ball*) puis le TurtleBot se rend automatiquement au point validé. |                                                 |
 
@@ -140,52 +174,11 @@ Puis arrêtez le conteneur :
 docker-compose down
 ```
 
-
-
-### 🚀 Lancer la simulation
-
-Ouvre **3 terminaux Docker** (ou utilise `tmux`/`tilix`) et exécute :
-
-**Terminal 1 : Gazebo**
-
-```bash
-source ros_workshop_ws/install/setup.sh
-ros2 launch open_manipulator_bringup gazebo.launch.py
-```
-
-**Terminal 2 : MoveIt**
-
-```bash
-sudo usermod -aG docker $USER
-exec su -l $USER
-docker exec -it ros2_jazzy_gui bash
-source ros_workshop_ws/install/setup.sh
-LC_NUMERIC=en_US.UTF-8 ros2 launch open_manipulator_moveit_config moveit_core.launch.py
-```
-
-**Terminal 3 : Démo de manipulation**
-
-```bash
-sudo usermod -aG docker $USER
-exec su -l $USER
-docker exec -it ros2_jazzy_gui bash
-source ros_workshop_ws/install/setup.sh
-ros2 run open_manipulator_playground take_ball
-```
-
 ---
 
-### 📦 Contenu
+## 📷 Utilisation de la webcam avec ROS 2 - Bonus de la présentation
 
-* `ros2_ws/`: environnement ROS 2 avec packages clonés + sources personnalisées
-* `take_ball_src/`: contient un `take_ball.cpp` personnalisé pour manipuler un objet
-* `script.sh`: script d’installation automatique dans le conteneur
-
----
-
-## 📷 Utilisation de la webcam avec ROS 2
-
-### 1. Connexion au robot
+### 1. Connexion au robot, si vous effectué avez déjà tout configuré, il faut juste aller à la partie 2
 
 Avant d’utiliser la webcam, vous devez être connecté au robot et avoir lancé la pile de navigation.
 Veuillez suivre les instructions détaillées dans [`nav-turtle-READ.md`](https://github.com/Kr034/ros2/blob/main/nav-turtle-READ.md).
@@ -233,5 +226,39 @@ ros2 run turtlebot3_webcam talker
   * `mediapipe`
   * `opencv-python`
 * Ces dépendances sont installées dans l’image Docker fournie dans ce projet.
-* 
+  
+---
+
+
+### 🚀 Lancer la simulation du mouvement du bras manipulateur 
+
+Ouvre **3 terminaux Docker** (ou utilise `tmux`/`tilix`) et exécute :
+
+**Terminal 1 : Gazebo**
+
+```bash
+source ros_workshop_ws/install/setup.sh
+ros2 launch open_manipulator_bringup gazebo.launch.py
+```
+
+**Terminal 2 : MoveIt**
+
+```bash
+sudo usermod -aG docker $USER
+exec su -l $USER
+docker exec -it ros2_jazzy_gui bash
+source ros_workshop_ws/install/setup.sh
+LC_NUMERIC=en_US.UTF-8 ros2 launch open_manipulator_moveit_config moveit_core.launch.py
+```
+
+**Terminal 3 : Démo de manipulation**
+
+```bash
+sudo usermod -aG docker $USER
+exec su -l $USER
+docker exec -it ros2_jazzy_gui bash
+source ros_workshop_ws/install/setup.sh
+ros2 run open_manipulator_playground take_ball
+```
+
 ---

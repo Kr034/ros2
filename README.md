@@ -38,7 +38,8 @@ exec su -l $USER
 ```
 
 ```bash
-# 4. Construire l'image Docker
+
+# 4. Construire l'image Docker (pensez a retourner dans le répertoire ros2 du git)
 docker build -t ros2-jazzy-noble .
 
 # 5. Lancer le conteneur avec Docker Compose

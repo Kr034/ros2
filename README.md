@@ -133,7 +133,7 @@ docker exec -it ros2_jazzy_gui bash
 source ros_workshop_ws/install/setup.sh
 ```
 
-Répétez la commande dans **trois** fenêtres séparées ; chacune exécutera un rôle différent.
+Répétez la commande dans **quatre** fenêtres séparées ; chacune exécutera un rôle différent.
 
 ---
 
@@ -143,7 +143,9 @@ Répétez la commande dans **trois** fenêtres séparées ; chacune exécutera u
 | -------- | ----------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
 | **T1**   | `ros2 launch open_manipulator_bringup gazebo.launch.py`                                   | Gazebo : monde + OpenManipulator-X + TurtleBot3                      |
 | **T2**   | `LC_NUMERIC=en_US.UTF-8 ros2 launch open_manipulator_moveit_config moveit_core.launch.py` | MoveIt 2 : planification bras + gripper                              |
-| **T3**   | `ros2 launch finger_nav finger_nav.launch.py`                                             | Interface gestuelle (MediaPipe) ⇒ prise de balle + navigation mobile |
+| **T3**   | `ros2 launch turtlebot3_navigation2 navigation2.launch.py   map:=/ros2_ws/test/map_workshop.yaml   use_sim_time:=False` | Rviz : Interface pour configurer la navigation et la position du robot |
+| **T4**   | `ros2 launch finger_nav finger_nav.launch.py`                                             | Interface gestuelle (MediaPipe) ⇒ prise de balle + navigation mobile |
+
 
 ---
 

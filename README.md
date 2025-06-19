@@ -35,6 +35,9 @@ cp -r ros2_ws/* ~/ros2_ws/
 ```bash
 sudo usermod -aG docker $USER
 exec su -l $USER
+```
+
+```bash
 # 4. Construire l'image Docker
 docker build -t ros2-jazzy-noble .
 

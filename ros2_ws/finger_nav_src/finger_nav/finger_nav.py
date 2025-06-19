@@ -111,10 +111,17 @@ class FingerNav(Node):
 
             if count in GOAL_POSITIONS:
                 if self.selected_goal != count:
-                    self.selected_goal = count
-                    self.validation_start = None
-                    self.status_message = f"Chiffre {count} ok. Maintenez 10 doigts (paumes visibles) pour valider."
-                    self.get_logger().info(self.status_message)
+                    if not hasattr(self, 'selection_start') or self.selection_start is None:
+                        self.selection_start = time.time()
+                    elif time.time() - self.selection_start >= 1.0:
+                        self.selected_goal = count
+                        self.validation_start = None
+                        self.status_message = f"Chiffre {count} ok. Maintenez 10 doigts (paumes visibles) pour valider."
+                        self.get_logger().info(self.status_message)
+                        self.selection_start = None
+                else:
+                    self.selection_start = None
+
 
             if self.selected_goal is not None:
                 if count == 10 and palm_oriented:
@@ -123,12 +130,12 @@ class FingerNav(Node):
                         self.status_message = "Validation en cours..."
                     elif time.time() - self.validation_start >= 5:
                         x, y, theta = GOAL_POSITIONS[self.selected_goal]
+                        self.status_message = f"Objectif  {self.selected_goal} . Le robot se déplace..."
                         self.send_goal(x, y, theta)
                         self.last_sent = time.time()
                         self.goal_in_progress = True
                         self.selected_goal = None
                         self.validation_start = None
-                        self.status_message = f"Objectif  {self.selected_goal} . Le robot se déplace..."
                         self.get_logger().info(self.status_message)
                 else:
                     self.validation_start = None

@@ -1,4 +1,4 @@
-import rclpy
+import rclpydrée par mes soins. Si vous souhaitez inviter une personne supplémentaire, merci de me le signaler en réponse à ce mail. Merci également de 
 from rclpy.node import Node
 import cv2
 import mediapipe as mp
@@ -116,7 +116,7 @@ class FingerNav(Node):
                     elif time.time() - self.selection_start >= 1.0:
                         self.selected_goal = count
                         self.validation_start = None
-                        self.status_message = f"Chiffre {count} ok. Maintenez 10 doigts (paumes visibles) pour valider."
+                        self.status_message = f"Chiffre {count} détecté. Maintenez 10 doigts (paumes visibles) pour valider."
                         self.get_logger().info(self.status_message)
                         self.selection_start = None
                 else:
@@ -127,10 +127,10 @@ class FingerNav(Node):
                 if count == 10 and palm_oriented:
                     if self.validation_start is None:
                         self.validation_start = time.time()
-                        self.status_message = "Validation en cours..."
+                        self.status_message = f"Validation en cours... pour le chiffre {self.selected_goal}"
                     elif time.time() - self.validation_start >= 5:
                         x, y, theta = GOAL_POSITIONS[self.selected_goal]
-                        self.status_message = f"Objectif  {self.selected_goal} . Le robot se déplace..."
+                        self.status_message = f"Objectif {self.selected_goal} en cours. Le robot se déplace..."
                         self.send_goal(x, y, theta)
                         self.last_sent = time.time()
                         self.goal_in_progress = True

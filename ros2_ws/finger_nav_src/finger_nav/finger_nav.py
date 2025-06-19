@@ -1,4 +1,4 @@
-import rclpydrée par mes soins. Si vous souhaitez inviter une personne supplémentaire, merci de me le signaler en réponse à ce mail. Merci également de 
+import rclpy
 from rclpy.node import Node
 import cv2
 import mediapipe as mp

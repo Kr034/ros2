@@ -69,7 +69,7 @@ Ce guide explique comment connecter, mettre à jour et piloter un robot TurtleBo
    Si vous utilisez Docker, modifiez ce fichier :
 
    ```bash
-   /opt/ros/jazzy/share/turtlebot3_navigation2/param/burger.yaml
+   /ros2_ws/ros_workshop_ws/src/turtlebot3/turtlebot3_navigation2/burger.yaml
    ```
 
    ➤ Modifiez notamment le paramètre suivant :

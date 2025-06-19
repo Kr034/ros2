@@ -160,3 +160,77 @@ ros2 run turtlebot3_webcam talker
   * `mediapipe`
   * `opencv-python`
 * Ces dépendances sont installées dans l’image Docker fournie dans ce projet.
+* 
+---
+
+
+## 🎬 End-to-end demo : bras + navigation + interface gestuelle
+
+> Prérequis :  
+> * L’image Docker est déjà construite (`docker build -t ros2-jazzy-noble .`)  
+> * Le conteneur est lancé via **docker-compose** (`docker-compose up -d`)  
+> * Votre utilisateur est dans le groupe *docker* :
+
+```bash
+sudo usermod -aG docker $USER
+exec su -l $USER        # recharge le shell avec les droits
+````
+
+---
+
+### 1 . Autoriser l’affichage X11/Wayland
+
+```bash
+xhost +local:docker      # à exécuter une seule fois sur l’hôte
+```
+
+---
+
+### 2 . Ouvrir trois terminaux dans le conteneur
+
+```bash
+docker exec -it ros2_jazzy_gui bash
+source ros_workshop_ws/install/setup.sh
+```
+
+Répétez la commande dans **trois** fenêtres séparées ; chacune exécutera un rôle différent.
+
+---
+
+### 3 . Lancer la simulation
+
+| Terminal | Commande                                                                                  | Rôle                                                                 |
+| -------- | ----------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| **T1**   | `ros2 launch open_manipulator_bringup gazebo.launch.py`                                   | Gazebo : monde + OpenManipulator-X + TurtleBot3                      |
+| **T2**   | `LC_NUMERIC=en_US.UTF-8 ros2 launch open_manipulator_moveit_config moveit_core.launch.py` | MoveIt 2 : planification bras + gripper                              |
+| **T3**   | `ros2 launch finger_nav finger_nav.launch.py`                                             | Interface gestuelle (MediaPipe) ⇒ prise de balle + navigation mobile |
+
+---
+
+### 4 . Utilisation
+
+| Geste                                                                                                      | Action                                          |
+| ---------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
+| **Main(s) montrant un chiffre** (paume visible)                                                            | Sélection d’un point d’intérêt (chiffres 1 → 9) |
+| **10 doigts levés** (paumes visibles) pendant ≥ 5 s                                                        | Validation de la sélection                      |
+| Le bras récupère la balle (action *take\_ball*) puis le TurtleBot se rend automatiquement au point validé. |                                                 |
+
+*Note : tant que le bras ou le robot sont en mouvement, l’interface ignore les nouveaux gestes et affiche l’état courant dans la fenêtre vidéo.*
+
+---
+
+### 5 . Arrêt
+
+Dans chaque terminal :
+
+```bash
+Ctrl-C
+exit
+```
+
+Puis arrêtez le conteneur :
+
+```bash
+docker-compose down
+```
+

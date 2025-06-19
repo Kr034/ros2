@@ -85,7 +85,6 @@ ros2 launch open_manipulator_bringup gazebo.launch.py
 ```bash
 sudo usermod -aG docker $USER
 exec su -l $USER
-docker-compose up -d
 docker exec -it ros2_jazzy_gui bash
 source ros_workshop_ws/install/setup.sh
 LC_NUMERIC=en_US.UTF-8 ros2 launch open_manipulator_moveit_config moveit_core.launch.py
@@ -96,7 +95,6 @@ LC_NUMERIC=en_US.UTF-8 ros2 launch open_manipulator_moveit_config moveit_core.la
 ```bash
 sudo usermod -aG docker $USER
 exec su -l $USER
-docker-compose up -d
 docker exec -it ros2_jazzy_gui bash
 source ros_workshop_ws/install/setup.sh
 ros2 run open_manipulator_playground take_ball
